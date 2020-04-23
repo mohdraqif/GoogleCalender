@@ -13,7 +13,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js -e html,css,js",
+    "start": "node app.js",
     "dev": "env-cmd -f ./config/dev.env node app.js"
   },
   "author": "",
