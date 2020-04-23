@@ -13,8 +13,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "nodemon app.js -e html,css,js",
-    "dev": "env-cmd -f ./config/dev.env nodemon app.js"
+    "start": "node app.js -e html,css,js",
+    "dev": "env-cmd -f ./config/dev.env node app.js"
   },
   "author": "",
   "license": "ISC"
