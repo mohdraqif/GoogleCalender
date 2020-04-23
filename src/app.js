@@ -196,8 +196,8 @@ app.post('/events', (req, res) =>{
     to: req.body.to,
     from: 'mohdraqif94@gmail.com',
     subject: req.body.summary,
-    text: 'You got a new Google Calender event invite',
-    html: '<strong>You got a new Google Calender event invite</strong>',
+    text: req.body.description,
+    html: req.body.description,
   };
   sgMail.send(msg);
 

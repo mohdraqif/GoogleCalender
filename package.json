@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "engines": {
+    "node": "13.10.1"
+  },
   "dependencies": {
     "@sendgrid/mail": "^7.0.1",
     "ejs": "^3.0.2",
@@ -13,8 +16,8 @@
   },
   "devDependencies": {},
   "scripts": {
-    "start": "node app.js",
-    "dev": "env-cmd -f ./config/dev.env node app.js"
+    "start": "node src/app.js",
+    "dev": "env-cmd -f ./config/dev.env node src/app.js"
   },
   "author": "",
   "license": "ISC"
