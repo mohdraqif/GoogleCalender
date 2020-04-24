@@ -146,7 +146,7 @@ app.post('/events', (req, res) =>{
   const event = {
     summary: `${req.body.summary}`,
     description: `${req.body.description}`,
-    colorId: 1,
+    colorId: 6,
     start: {
       dateTime: eventStartTime,
     },

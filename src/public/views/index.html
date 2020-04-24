@@ -6,17 +6,24 @@
   <link rel="stylesheet" href="../css/app.css">
 </head>
 <body>
-  <div>
-  <form action="http://localhost:3000/" method="POST">
-    <a class="button" target="_blank" rel="noopener noreferrer" href="https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly&response_type=code&client_id=331657485002-lf247pr6qhjhi73alfd1ejl4935tvp9t.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob">Sign In</a><br>
-    <input name="token" type="text" placeholder="paste code here">
-    <button type="submit">Get Events</button>
-  </form>
-  <form action="http://localhost:3000/events" method="POST">
-    <input name="to" type="email" placeholder="enter attendee email">
-    <input name="summary" type="text" placeholder="enter event title">
-    <input name="description" type="text" placeholder="enter event body">
-    <button type="submit">Create Event</button>
-  </form>
+  <div class="form">
+    <form action="http://localhost:3000/" method="POST">
+      <a class="button" target="_blank" rel="noopener noreferrer" href="https://accounts.google.com/o/oauth2/v2/auth?access_type=offline&scope=https%3A%2F%2Fwww.googleapis.com%2Fauth%2Fcalendar.readonly&response_type=code&client_id=331657485002-lf247pr6qhjhi73alfd1ejl4935tvp9t.apps.googleusercontent.com&redirect_uri=urn%3Aietf%3Awg%3Aoauth%3A2.0%3Aoob">Sign In</a>
+       <span>You need to Sign In first</span><br><br>
+      <label for="token">Paste the copied token here</label>
+      <input name="token" type="text" placeholder="must be like this Jw65AJg05xiOGmkCld...">
+      <input type="submit" value="Get my events"></input>
+    </form>
+    <hr>
+    <form action="http://localhost:3000/events" method="POST">
+      <label for="attendee email">Attendee email</label>
+      <input type="email" name="to" placeholder="send email to...">
+      <label for="event title">Event Title</label>
+      <input type="text" name="summary" placeholder="the title of event...">
+      <label for="body">Event body</label>
+      <input type="text" name="description" placeholder="the message body...">
+      <input type="submit" value="Send Event Invite">
+    </form>
+  </div>
 </body>
 </html>
