@@ -194,7 +194,7 @@ app.post('/events', (req, res) =>{
   sgMail.setApiKey(process.env.SENDGRID_API_KEY);
   const msg = {
     to: req.body.to,
-    from: 'mohdraqif94@gmail.com',
+    from: 'yourmail@example.com',
     subject: req.body.summary,
     text: req.body.description,
     html: req.body.description,
