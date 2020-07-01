@@ -1,6 +1,23 @@
 # GoogleCalender
 
+
+*****************************************************
+****************** IMPORTANT ************************
+
+
+  Make YOUR OWN credentials.json file
+
+  Watch video: The Google Calendar API (PART 1)
+
+  Time: 12:20 - Google Calendar API and credentials.json
+  
+
+****************** IMPORTANT ************************
+*****************************************************
+
+
 How this Project works? https://www.youtube.com/watch?v=K2JD61PZ-8U&list=PLcL8q_TiioW3FxvmlatZlTZQCnRs_UMoG
+
 
 This project is made by GOOGLE SEARCH API, SENDGRID and GOOGLE DEVELOPER CONSOLE.
 
