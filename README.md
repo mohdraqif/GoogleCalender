@@ -5,7 +5,7 @@
 ****************** IMPORTANT ************************
 
 
-  Make YOUR OWN credentials.json file BEFORE running the CODE
+  Make YOUR OWN credentials.json file BEFORE running the code
 
   Watch video: The Google Calendar API (PART 1)
 
