@@ -1,3 +1,12 @@
+/*
+  Make YOUR OWN credentials.json file
+
+  Watch video: The Google Calendar API (PART 1)
+
+  Time: 12:20 - Google Calendar API and credentials.json
+
+*/
+
 const express = require('express')
 const app = express()
 const path = require('path')
