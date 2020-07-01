@@ -2,7 +2,7 @@
 
 How this Project works? https://www.youtube.com/watch?v=K2JD61PZ-8U&list=PLcL8q_TiioW3FxvmlatZlTZQCnRs_UMoG
 
-/*
+****************** IMPORTANT ************************
 
   Make YOUR OWN credentials.json file
 
@@ -10,7 +10,8 @@ How this Project works? https://www.youtube.com/watch?v=K2JD61PZ-8U&list=PLcL8q_
 
   Time: 12:20 - Google Calendar API and credentials.json
 
-*/
+****************** IMPORTANT ************************
+
 
 This project is made by GOOGLE SEARCH API, SENDGRID and GOOGLE DEVELOPER CONSOLE.
 
