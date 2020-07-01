@@ -3,7 +3,7 @@
 
   Watch video: The Google Calendar API (PART 1)
 
-  Time: 12:20 - Google Calendar API and credentials.json
+  Time: 13:20 - Google Calendar API and credentials.json
 
 */
 
