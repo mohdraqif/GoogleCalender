@@ -7,7 +7,7 @@
     "node": "13.10.1"
   },
   "dependencies": {
-    "@sendgrid/mail": "^7.0.1",
+    "@sendgrid/mail": "^7.4.0",
     "ejs": "^3.0.2",
     "express": "^4.17.1",
     "googleapis": "^39.2.0",

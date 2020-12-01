@@ -28,7 +28,6 @@ app.get('/', (req, res) =>{
 app.post('/', (req, res) => {
   const tkn=req.body.token;
   const fs = require('fs');
-  const readline = require('readline');
   const {google} = require('googleapis');
 
   const SCOPES = ['https://www.googleapis.com/auth/calendar.readonly'];
@@ -70,16 +69,6 @@ app.post('/', (req, res) => {
    * @param {getEventsCallback} callback The callback for the authorized client.
    */
   function getAccessToken(oAuth2Client, callback) {
-    const authUrl = oAuth2Client.generateAuthUrl({
-      access_type: 'offline',
-      scope: SCOPES,
-    });
-
-    const rl = readline.createInterface({
-      input: process.stdin,
-      output: process.stdout,
-    });
- 
     oAuth2Client.getToken(tkn, (err, token) => {
       if (err) return console.error('Error retrieving access token', err);
       oAuth2Client.setCredentials(token);
@@ -197,18 +186,23 @@ app.post('/events', (req, res) =>{
     }
   )
   console.log(req.body)
-  // using Twilio SendGrid's v3 Node.js Library
-  // https://github.com/sendgrid/sendgrid-nodejs
-  const sgMail = require('@sendgrid/mail');
-  sgMail.setApiKey(process.env.SENDGRID_API_KEY);
+  const sgMail = require('@sendgrid/mail')
+  sgMail.setApiKey(process.env.SENDGRID_API_KEY)
   const msg = {
-    to: req.body.to,
-    from: 'yourmail@example.com',
+    to: req.body.to, // Change to your recipient
+    from: 'your email goes here', // Change to your verified sender
     subject: req.body.summary,
     text: req.body.description,
     html: req.body.description,
-  };
-  sgMail.send(msg);
+  }
+  sgMail
+    .send(msg)
+    .then(() => {
+      console.log('Email sent')
+    })
+    .catch((error) => {
+      console.error(error)
+    })
 
   res.render('events.html')
 })
