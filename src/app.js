@@ -7,7 +7,7 @@
 
 */
 
-//Auto commit check
+// New Auto Commit Check
 
 const express = require('express')
 const app = express()
